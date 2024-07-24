@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Projeto Calculadora</title>
+</head>
+
+<body>
+  <div id="projeto">
+    <h1>Calculadora Simples</h1>
+    <h2>Feito por: Lucas Basso</h2>
+  </div>
+  <div id="calculadora">
+    <input id="tela" readonly>
+    <div id="itens">
+      <button onclick="mostrarNaTela('+')" class="botao-operador">+</button>
+      <button onclick="mostrarNaTela('7')">7</button>
+      <button onclick="mostrarNaTela('8')">8</button>
+      <button onclick="mostrarNaTela('9')">9</button>
+      <button onclick="mostrarNaTela('-')" class="botao-operador">-</button>
+      <button onclick="mostrarNaTela('4')">4</button>
+      <button onclick="mostrarNaTela('5')">5</button>
+      <button onclick="mostrarNaTela('6')">6</button>
+      <button onclick="mostrarNaTela('*')" class="botao-operador">*</button>
+      <button onclick="mostrarNaTela('1')">1</button>
+      <button onclick="mostrarNaTela('2')">2</button>
+      <button onclick="mostrarNaTela('3')">3</button>
+      <button onclick="mostrarNaTela('/')" class="botao-operador">/</button>
+      <button onclick="mostrarNaTela('0')">0</button>
+      <button onclick="mostrarNaTela('.')">.</button>
+      <button onclick="calcular()" id="igual">=</button>
+      <button onclick="limparTela()" class="botao-operador">C</button>
+    </div>
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
