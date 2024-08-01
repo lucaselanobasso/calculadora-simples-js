@@ -7,15 +7,37 @@ body {
   background-color: hsl(0, 0%, 95%);
 }
 
-#calculadora {
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(0, 0%, 10%);
+}
+
+.descricao {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  text-align: center;
+  padding: 0px 30px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: hsl(0, 0%, 10%);
+  background-color: hsl(0, 50%, 40%);
   border-radius: 15px;
   max-width: 500px;
   overflow: hidden;
 }
 
-#projeto {
+#calculadora {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(0, 0%, 80%);
+  border-radius: 15px;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+/* #projeto {
   text-align: center;
   align-items: start;
   justify-content: start;
@@ -23,7 +45,7 @@ body {
   background-color: hsl(0, 0%, 90%);
   border-radius: 15px;
   max-width: 500px;
-}
+} */
 
 #tela {
   width: 100%;
@@ -45,7 +67,7 @@ body {
 button {
   width: 100px;
   height: 100px;
-  border-radius: 50px;
+  border-radius: 7px;
   border: none;
   background-color: hsl(0, 0%, 30%);
   color: white;

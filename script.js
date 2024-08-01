@@ -1,17 +1,17 @@
-const tela = document.getElementById("tela");
+const display = document.getElementById("tela");
 
 function mostrarNaTela(input) {
-  tela.value += input;
+  display.value += input;
 }
 
 function limparTela() {
-  tela.value = "";
+  display.value = "";
 }
 
 function calcular() {
   try {
-    tela.value = eval(tela.value);
+    display.value = eval(display.value);
   } catch (error) {
-    tela.value = "Erro";
+    display.value = "Error";
   }
 }
