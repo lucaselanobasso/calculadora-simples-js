@@ -1,17 +1,27 @@
-const display = document.getElementById("tela");
+const display = document.getElementById("display");
 
-function mostrarNaTela(input) {
+function appendToDisplay(input) {
   display.value += input;
 }
 
-function limparTela() {
+function clearDisplay() {
   display.value = "";
 }
 
-function calcular() {
+function calculate() {
+  if (display.value.trim() === "") {
+    return;
+  }
+
   try {
-    display.value = eval(display.value);
+    let result = eval(display.value);
+
+    if (!isFinite(result) || isNaN(result)) {
+      display.value = "Erro";
+    } else {
+      display.value = result;
+    }
   } catch (error) {
-    display.value = "Error";
+    display.value = "Erro";
   }
 }
